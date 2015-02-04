@@ -1,5 +1,15 @@
 angular.module('starter.controllers', [])
 
+.controller('PouchCtrl', function($scope) {
+  var db = new PouchDB('pouch');                                // <--- this one uses any available adapter
+  var idb = new PouchDB('idbpouch', {adapter: 'idb'});          // <--- this one uses IndexedDB
+  var websql = new PouchDB('websqlpouch', {adapter: 'websql'}); // <--- this one uses WebSQL
+  
+  $scope.pouchdbSupported = !!db.adapter;
+  $scope.idbSupported = !!idb.adapter;
+  $scope.websqlSupported = !!websql.adapter;
+})
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

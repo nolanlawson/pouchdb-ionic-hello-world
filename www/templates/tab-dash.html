@@ -1,26 +1,25 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
-    <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
+    <div class="list card" ng-controller="PouchCtrl">
+      <div class="item item-divider">PouchDB status</div>
       <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
+        <div ng-show="pouchdbSupported">
+          &#10003; PouchDB is working.
         </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
+        <div ng-show="!pouchdbSupported">
+          &#10007; PouchDB is not working.
         </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
+        <div ng-show="idbSupported">
+          &#10003; IndexedDB is supported.
+        </div>
+        <div ng-show="!idbSupported">
+          &#10007; IndexedDB is not supported.
+        </div>
+        <div ng-show="websqlSupported">
+          &#10003; WebSQL is supported.
+        </div>
+        <div ng-show="!websqlSupported">
+          &#10007; WebSQL is not supported.
         </div>
       </div>
     </div>
