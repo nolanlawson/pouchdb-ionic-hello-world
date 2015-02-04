@@ -17,9 +17,8 @@ Then I added `pouchdb.js` to `index.html`:
 <script src="lib/pouchdb/dist/pouchdb.min.js"></script>
 ```
 
-To run the app yourself on a variety of platforms, just check out the code and follow the instructions below.
-
-### Android
+To run the app yourself on a variety of platforms, just check out the code and follow the instructions below.    
+#### Android
 
     cordova platform add android
     ionic run android
@@ -27,8 +26,7 @@ To run the app yourself on a variety of platforms, just check out the code and f
 What you'll see:
 
 <a href="./screenshots/android.png"><img src="./screenshots/android.png" height=500/></a>
-
-### iOS
+#### iOS
 
     cordova platform add ios
     ionic run ios
@@ -36,8 +34,7 @@ What you'll see:
 What you'll see:
 
 <a href="./screenshots/ios.png"><img src="./screenshots/ios.png" height=500/></a>
-
-### FirefoxOS
+#### FirefoxOS
 
     cordova platform add firefoxos
     ionic build firefoxos
@@ -47,7 +44,6 @@ What you'll see:
 What you'll see:
 
 <a href="./screenshots/firefoxos.png"><img src="./screenshots/firefoxos.png" height=500/></a>
-
-### Other platforms
+#### Other platforms
 
 Feel free to try it out and take screenshots. :)
