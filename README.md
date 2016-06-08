@@ -1,7 +1,7 @@
 PouchDB Ionic "hello world" app
 ======
 
-_**Note:** this is for Ionic 1. For an Ionic 2 versions, see [pouch-ionic2-hello-world](https://github.com/djuniorscjr/pouch-ionic2-hello-world)._
+_**Note:** this is for Ionic 1. For an Ionic 2 version, see [pouch-ionic2-hello-world](https://github.com/djuniorscjr/pouch-ionic2-hello-world)._
 
 This is a basic Ionic app. It was created using the `ionic` CLI, by running:
 
